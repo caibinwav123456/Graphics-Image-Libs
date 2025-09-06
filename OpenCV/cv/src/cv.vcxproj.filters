@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Src">
+      <UniqueIdentifier>{fb645546-e4b8-425c-88f5-eb474535f23e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\ImageProcessing">
+      <UniqueIdentifier>{67562686-f147-4209-81e9-02f3f21ddc86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\StructuralAnalysis">
+      <UniqueIdentifier>{00e9444f-7fbc-4ecd-b7be-aa70b27943f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\MotionAndTracking">
+      <UniqueIdentifier>{b2388a1a-009e-4624-a2ca-b67845efb16f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\3D">
+      <UniqueIdentifier>{3a1a37c7-096e-49a8-b708-3e28521064d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\PatternRecognition">
+      <UniqueIdentifier>{cdb89005-bad7-48d2-88fe-761dbbc82ebc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\CoreEx">
+      <UniqueIdentifier>{d2d1ae75-5a91-4f37-b9fe-5890ab506c08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{a9bbc5b9-7f23-4a78-8c44-1b2009247c38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\External">
+      <UniqueIdentifier>{3c8f726b-02fa-4961-8b95-d36620d26125}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Internal">
+      <UniqueIdentifier>{a33da2b9-acf1-4e27-b14b-b14a24ff857c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="cv.rc">
+      <Filter>Src</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cvprecomp.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="cvadapthresh.cpp">
+      <Filter>Src\ImageProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="cvcalccontrasthistogram.cpp">
+      <Filter>Src\ImageProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="cvcanny.cpp">
+      <Filter>Src\ImageProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="cvcolor.cpp">
+      <Filter>Src\ImageProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="cvcontours.cpp">
+      <Filter>Src\ImageProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="cvcorner.cpp">
+      <Filter>Src\ImageProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="cvcornersubpix.cpp">
+      <Filter>Src\ImageProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="cvderiv.cpp">
+      <Filter>Src\ImageProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="cvfeatureselect.cpp">
+      <Filter>Src\ImageProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="cvfilter.cpp">
+      <Filter>Src\ImageProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="cvfloodfill.cpp">
+      <Filter>Src\ImageProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="cvhistogram.cpp">
+      <Filter>Src\ImageProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="cvimgwarp.cpp">
+      <Filter>Src\ImageProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="cvinpaint.cpp">
+      <Filter>Src\ImageProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="cvmoments.cpp">
+      <Filter>Src\ImageProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="cvmorph.cpp">
+      <Filter>Src\ImageProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="cvpyramids.cpp">
+      <Filter>Src\ImageProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="cvsamplers.cpp">
+      <Filter>Src\ImageProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="cvsegmentation.cpp">
+      <Filter>Src\ImageProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="cvsmooth.cpp">
+      <Filter>Src\ImageProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="cvtemplmatch.cpp">
+      <Filter>Src\ImageProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="cvthresh.cpp">
+      <Filter>Src\ImageProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="cvapprox.cpp">
+      <Filter>Src\StructuralAnalysis</Filter>
+    </ClCompile>
+    <ClCompile Include="cvcontourtree.cpp">
+      <Filter>Src\StructuralAnalysis</Filter>
+    </ClCompile>
+    <ClCompile Include="cvconvhull.cpp">
+      <Filter>Src\StructuralAnalysis</Filter>
+    </ClCompile>
+    <ClCompile Include="cvdistransform.cpp">
+      <Filter>Src\StructuralAnalysis</Filter>
+    </ClCompile>
+    <ClCompile Include="cvdominants.cpp">
+      <Filter>Src\StructuralAnalysis</Filter>
+    </ClCompile>
+    <ClCompile Include="cvemd.cpp">
+      <Filter>Src\StructuralAnalysis</Filter>
+    </ClCompile>
+    <ClCompile Include="cvgeometry.cpp">
+      <Filter>Src\StructuralAnalysis</Filter>
+    </ClCompile>
+    <ClCompile Include="cvhough.cpp">
+      <Filter>Src\StructuralAnalysis</Filter>
+    </ClCompile>
+    <ClCompile Include="cvlinefit.cpp">
+      <Filter>Src\StructuralAnalysis</Filter>
+    </ClCompile>
+    <ClCompile Include="cvmatchcontours.cpp">
+      <Filter>Src\StructuralAnalysis</Filter>
+    </ClCompile>
+    <ClCompile Include="cvpgh.cpp">
+      <Filter>Src\StructuralAnalysis</Filter>
+    </ClCompile>
+    <ClCompile Include="cvpyrsegmentation.cpp">
+      <Filter>Src\StructuralAnalysis</Filter>
+    </ClCompile>
+    <ClCompile Include="cvrotcalipers.cpp">
+      <Filter>Src\StructuralAnalysis</Filter>
+    </ClCompile>
+    <ClCompile Include="cvshapedescr.cpp">
+      <Filter>Src\StructuralAnalysis</Filter>
+    </ClCompile>
+    <ClCompile Include="cvsubdivision2d.cpp">
+      <Filter>Src\StructuralAnalysis</Filter>
+    </ClCompile>
+    <ClCompile Include="cvcamshift.cpp">
+      <Filter>Src\MotionAndTracking</Filter>
+    </ClCompile>
+    <ClCompile Include="cvcondens.cpp">
+      <Filter>Src\MotionAndTracking</Filter>
+    </ClCompile>
+    <ClCompile Include="cvkalman.cpp">
+      <Filter>Src\MotionAndTracking</Filter>
+    </ClCompile>
+    <ClCompile Include="cvlkpyramid.cpp">
+      <Filter>Src\MotionAndTracking</Filter>
+    </ClCompile>
+    <ClCompile Include="cvmotempl.cpp">
+      <Filter>Src\MotionAndTracking</Filter>
+    </ClCompile>
+    <ClCompile Include="cvoptflowbm.cpp">
+      <Filter>Src\MotionAndTracking</Filter>
+    </ClCompile>
+    <ClCompile Include="cvoptflowhs.cpp">
+      <Filter>Src\MotionAndTracking</Filter>
+    </ClCompile>
+    <ClCompile Include="cvoptflowlk.cpp">
+      <Filter>Src\MotionAndTracking</Filter>
+    </ClCompile>
+    <ClCompile Include="cvsnakes.cpp">
+      <Filter>Src\MotionAndTracking</Filter>
+    </ClCompile>
+    <ClCompile Include="cvcalcimagehomography.cpp">
+      <Filter>Src\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="cvcalibinit.cpp">
+      <Filter>Src\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="cvcalibration.cpp">
+      <Filter>Src\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="cvfundam.cpp">
+      <Filter>Src\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="cvposit.cpp">
+      <Filter>Src\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="cvundistort.cpp">
+      <Filter>Src\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="cvhaar.cpp">
+      <Filter>Src\PatternRecognition</Filter>
+    </ClCompile>
+    <ClCompile Include="cvaccum.cpp">
+      <Filter>Src\CoreEx</Filter>
+    </ClCompile>
+    <ClCompile Include="cvsumpixels.cpp">
+      <Filter>Src\CoreEx</Filter>
+    </ClCompile>
+    <ClCompile Include="cvswitcher.cpp">
+      <Filter>Src\CoreEx</Filter>
+    </ClCompile>
+    <ClCompile Include="cvtables.cpp">
+      <Filter>Src\CoreEx</Filter>
+    </ClCompile>
+    <ClCompile Include="cvutils.cpp">
+      <Filter>Src\CoreEx</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\cv.h">
+      <Filter>Include\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\cv.hpp">
+      <Filter>Include\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\cvcompat.h">
+      <Filter>Include\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\cvtypes.h">
+      <Filter>Include\External</Filter>
+    </ClInclude>
+    <ClInclude Include="_cv.h">
+      <Filter>Include\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="_cvgeom.h">
+      <Filter>Include\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="_cvimgproc.h">
+      <Filter>Include\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="_cvipp.h">
+      <Filter>Include\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="_cvlist.h">
+      <Filter>Include\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="_cvmatrix.h">
+      <Filter>Include\Internal</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

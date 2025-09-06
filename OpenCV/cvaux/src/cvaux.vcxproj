@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FFABC1E5-619E-4EE7-B09E-95842DCE8887}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.32830.301</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\..\..\_temp\cvaux_Dbg\</OutDir>
+    <IntDir>.\..\..\_temp\cvaux_Dbg\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>.\..\..\_temp\cvaux_Dbg64\</OutDir>
+    <IntDir>.\..\..\_temp\cvaux_Dbg64\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\..\..\_temp\cvaux_Rls\</OutDir>
+    <IntDir>.\..\..\_temp\cvaux_Rls\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>.\..\..\_temp\cvaux_Rls64\</OutDir>
+    <IntDir>.\..\..\_temp\cvaux_Rls64\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\..\..\_temp\cvaux_Dbg/cvaux.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/Zm200  %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../include;../../cxcore/include;../../cv/include;../../cv/src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;CVAPI_EXPORTS;WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <OpenMPSupport>false</OpenMPSupport>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>_cvaux.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\..\..\_temp\cvaux_Dbg/cvaux.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\..\..\_temp\cvaux_Dbg/</AssemblerListingLocation>
+      <ObjectFileName>.\..\..\_temp\cvaux_Dbg/</ObjectFileName>
+      <ProgramDataBaseFileName>.\..\..\_temp\cvaux_Dbg/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0419</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>cvd.lib;cxcored.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\bin/cvaux100d.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libmmdd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>..\..\bin/cvaux100d.pdb</ProgramDatabaseFile>
+      <ImportLibrary>..\..\lib/cvauxd.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\..\..\_temp\cvaux_Dbg/cvaux.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>.\..\..\_temp\cvaux_Dbg64/cvaux.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/Zm200  %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../include;../../cxcore/include;../../cv/include;../../cv/src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;CVAPI_EXPORTS;WIN32;WIN64;EM64T;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <OpenMPSupport>false</OpenMPSupport>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>_cvaux.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\..\..\_temp\cvaux_Dbg64/cvaux.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\..\..\_temp\cvaux_Dbg64/</AssemblerListingLocation>
+      <ObjectFileName>.\..\..\_temp\cvaux_Dbg64/</ObjectFileName>
+      <ProgramDataBaseFileName>.\..\..\_temp\cvaux_Dbg64/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0419</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>cvd_64.lib;cxcored_64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\bin/cvaux100d_64.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libmmdd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>..\..\bin/cvaux100d_64.pdb</ProgramDatabaseFile>
+      <ImportLibrary>..\..\lib/cvauxd_64.lib</ImportLibrary>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\..\..\_temp\cvaux_Dbg64/cvaux.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\..\..\_temp\cvaux_Rls/cvaux.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/Zm200  %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>../include;../../cxcore/include;../../cv/include;../../cv/src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;CVAPI_EXPORTS;WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <OpenMPSupport>false</OpenMPSupport>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>_cvaux.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\..\..\_temp\cvaux_Rls/cvaux.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\..\..\_temp\cvaux_Rls/</AssemblerListingLocation>
+      <ObjectFileName>.\..\..\_temp\cvaux_Rls/</ObjectFileName>
+      <ProgramDataBaseFileName>.\..\..\_temp\cvaux_Rls/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0419</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>cv.lib;cxcore.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\bin/cvaux100.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libmmd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>..\..\bin/cvaux100.pdb</ProgramDatabaseFile>
+      <ImportLibrary>..\..\lib/cvaux.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\..\..\_temp\cvaux_Rls/cvaux.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>.\..\..\_temp\cvaux_Rls64/cvaux.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/Zm200  %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>../include;../../cxcore/include;../../cv/include;../../cv/src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;CVAPI_EXPORTS;WIN32;WIN64;EM64T;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <OpenMPSupport>false</OpenMPSupport>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>_cvaux.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\..\..\_temp\cvaux_Rls64/cvaux.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\..\..\_temp\cvaux_Rls64/</AssemblerListingLocation>
+      <ObjectFileName>.\..\..\_temp\cvaux_Rls64/</ObjectFileName>
+      <ProgramDataBaseFileName>.\..\..\_temp\cvaux_Rls64/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0419</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>cv_64.lib;cxcore_64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\bin/cvaux100_64.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libmmd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>..\..\bin/cvaux100_64.pdb</ProgramDatabaseFile>
+      <ImportLibrary>..\..\lib/cvaux_64.lib</ImportLibrary>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\..\..\_temp\cvaux_Rls64/cvaux.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="camshift.cpp" />
+    <ClCompile Include="cv3dtracker.cpp" />
+    <ClCompile Include="cvaux.cpp" />
+    <ClCompile Include="cvauxutils.cpp" />
+    <ClCompile Include="cvbgfg_acmmm2003.cpp" />
+    <ClCompile Include="cvbgfg_common.cpp" />
+    <ClCompile Include="cvbgfg_gaussmix.cpp" />
+    <ClCompile Include="cvcalibfilter.cpp" />
+    <ClCompile Include="cvcorrespond.cpp" />
+    <ClCompile Include="cvcorrimages.cpp" />
+    <ClCompile Include="cvcreatehandmask.cpp" />
+    <ClCompile Include="cvdpstereo.cpp" />
+    <ClCompile Include="cveigenobjects.cpp" />
+    <ClCompile Include="cvepilines.cpp" />
+    <ClCompile Include="cvface.cpp" />
+    <ClCompile Include="cvfacedetection.cpp" />
+    <ClCompile Include="cvfacetemplate.cpp" />
+    <ClCompile Include="cvfindface.cpp" />
+    <ClCompile Include="cvfindhandregion.cpp" />
+    <ClCompile Include="cvhmm.cpp" />
+    <ClCompile Include="cvhmm1d.cpp" />
+    <ClCompile Include="cvhmmobs.cpp" />
+    <ClCompile Include="cvlcm.cpp" />
+    <ClCompile Include="cvlee.cpp" />
+    <ClCompile Include="cvlevmar.cpp" />
+    <ClCompile Include="cvlevmarprojbandle.cpp" />
+    <ClCompile Include="cvlevmartrif.cpp" />
+    <ClCompile Include="cvlines.cpp" />
+    <ClCompile Include="cvlmeds.cpp" />
+    <ClCompile Include="cvmorphcontours.cpp" />
+    <ClCompile Include="cvmorphing.cpp" />
+    <ClCompile Include="cvprewarp.cpp" />
+    <ClCompile Include="cvscanlines.cpp" />
+    <ClCompile Include="cvsegment.cpp" />
+    <ClCompile Include="cvsubdiv2.cpp" />
+    <ClCompile Include="cvtexture.cpp" />
+    <ClCompile Include="cvtrifocal.cpp" />
+    <ClCompile Include="cvvecfacetracking.cpp" />
+    <ClCompile Include="cvvideo.cpp" />
+    <ClCompile Include="precomp.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="vs\bgfg_estimation.cpp" />
+    <ClCompile Include="vs\blobtrackanalysis.cpp" />
+    <ClCompile Include="vs\blobtrackanalysishist.cpp" />
+    <ClCompile Include="vs\blobtrackanalysisior.cpp" />
+    <ClCompile Include="vs\blobtrackanalysistrackdist.cpp" />
+    <ClCompile Include="vs\blobtrackgen1.cpp" />
+    <ClCompile Include="vs\blobtrackgenyml.cpp" />
+    <ClCompile Include="vs\blobtrackingauto.cpp" />
+    <ClCompile Include="vs\blobtrackingcc.cpp" />
+    <ClCompile Include="vs\blobtrackingccwithcr.cpp" />
+    <ClCompile Include="vs\blobtrackingkalman.cpp" />
+    <ClCompile Include="vs\blobtrackinglist.cpp" />
+    <ClCompile Include="vs\blobtrackingmsfg.cpp" />
+    <ClCompile Include="vs\blobtrackingmsfgs.cpp" />
+    <ClCompile Include="vs\blobtrackpostprockalman.cpp" />
+    <ClCompile Include="vs\blobtrackpostproclinear.cpp" />
+    <ClCompile Include="vs\blobtrackpostproclist.cpp" />
+    <ClCompile Include="vs\enteringblobdetection.cpp" />
+    <ClCompile Include="vs\enteringblobdetectionreal.cpp" />
+    <ClCompile Include="vs\TestSeq.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="cvaux.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\cvaux.h" />
+    <ClInclude Include="..\include\cvaux.hpp" />
+    <ClInclude Include="..\include\cvvidsurv.hpp" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="_cvaux.h" />
+    <ClInclude Include="_cvfacedetection.h" />
+    <ClInclude Include="_cvvectrack.h" />
+    <ClInclude Include="_cvvm.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\cv\src\cv.vcxproj">
+      <Project>{204e2d54-c28a-43b7-9618-3eb8dc7d83d1}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\cxcore\src\cxcore.vcxproj">
+      <Project>{c30eed12-064c-4314-8a6b-426a11309a88}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
